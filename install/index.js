@@ -7,7 +7,7 @@ var rootDirPath = path.dirname(__dirname);
 var valueToPut = {}
 valueToPut[regPath] = {
     '(Default)': {
-        value: `${path.join(rootDirPath, 'node.exe')} ${path.join(rootDirPath, 'app.js')} "%1"`,
+        value: `"${path.join(rootDirPath, 'node.exe')}" "${path.join(rootDirPath, 'app.js')}" "%1"`,
         type: 'REG_DEFAULT'
     }
 }
